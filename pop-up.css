@@ -1,0 +1,23 @@
+.modal-box{
+    background: #fefefe;
+    max-width: 450px;
+    padding: 0 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal-p{
+    margin: 30px 0;
+    font-size: 14px;
+}
+
+.cancelbtn, .logoutbtn{
+    margin-bottom: 20px;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 550;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+

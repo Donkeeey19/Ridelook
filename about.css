@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap');
+
+:root {
+    --header-height: 3.5rem;
+
+    --first-color: hsl(219, 69%, 56%);
+    --first-color-alt: hsl(219, 69%, 52%);
+    --title-color: hsl(219, 8%, 95%);
+    --text-color: hsl(219, 8%, 75%) ;
+    --text-color-light: hsl(219, 4%, 55%);
+    --white-color: #fff;
+    --body-color: hsl(219, 4%, 4%);
+    --container-color: hsl(219, 4%, 7%);
+
+
+
+    --body-font: 'Exo', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size:1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smallest-font-size: .75rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --z-toolip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (max-width: 986px) {
+    :root {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smallest-font-size: .813rem;
+    }
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container { 
+    max-width: 1024px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section { 
+    padding: 4.5rem 0 2rem;
+}
+
+.section__title{
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-bottom: 2.5rem ;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.motor__title{
+    font-weight: var(--font-semi-bold);
+    margin-top: 2rem;
+    display: inline-block; /* or display: inline; */
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid hsl(158, 89%, 30%); /* Set a 2px wide solid red border */
+    padding: 5px; /* Optional: Add some padding around the text if desired */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 12px hsl(158, 98%, 43%);
+}
+
+.about__title{
+    position: absolute;
+    margin-top: 8rem;
+    left: 49rem;
+    font-size: 2rem;
+}
+.about__subtitle{
+    position: absolute;
+    margin-top: 10rem;
+    left: 46rem;
+    font-size: 1rem;
+}
+.about__title-2{
+    position: absolute;
+    margin-top: 20rem;
+    left: 54rem;
+    font-size: 2rem;
+}
+
+.about__title3{
+    position: absolute;
+    margin-top: 32.5rem;
+    left: 46rem;
+    font-size: 2rem;
+}
+
+.about__title4{
+    position: absolute;
+    margin-top: 63rem;
+    left: 49rem;
+    font-size: 2rem;
+}
+
+.about__m-1{
+    top: 13rem;
+    width: 600px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute; /* Set the position to relative */
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.about__m-2{
+    top: 26rem;
+    width: 600px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute; /* Set the position to relative */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about__m-3{
+    top: 40rem;
+    width: 1000px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute; /* Set the position to relative */
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about__m-4 {
+    top: 70rem;
+    width: 1000px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute; /* Set the position to relative */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20rem;
+}

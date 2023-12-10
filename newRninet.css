@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap');
+
+:root {
+    --header-height: 3.5rem;
+
+    --first-color: hsl(219, 69%, 56%);
+    --first-color-alt: hsl(219, 69%, 52%);
+    --title-color: hsl(219, 8%, 95%);
+    --text-color: hsl(219, 8%, 75%) ;
+    --text-color-light: hsl(219, 4%, 55%);
+    --white-color: #fff;
+    --body-color: hsl(219, 4%, 4%);
+    --container-color: hsl(219, 4%, 7%);
+
+
+
+    --body-font: 'Exo', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size:1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smallest-font-size: .75rem;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    --z-toolip: 10;
+    --z-fixed: 100;
+}
+
+@media screen and (max-width: 986px) {
+    :root {
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smallest-font-size: .813rem;
+    }
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container { 
+    max-width: 1024px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section { 
+    padding: 4.5rem 0 2rem;
+}
+
+.section__title{
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-bottom: 2.5rem ;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.motor__title{
+    font-weight: var(--font-semi-bold);
+    margin-top: 2rem;
+    display: inline-block; /* or display: inline; */
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid hsl(158, 89%, 30%); /* Set a 2px wide solid red border */
+    padding: 5px; /* Optional: Add some padding around the text if desired */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 12px hsl(158, 98%, 43%);
+}
+
+.motor__one{
+    margin-top: 4rem;
+
+}
+
+.motor__two{
+    margin-top: -4rem;
+
+}
+
+.about__title{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about__m-1,
+.about__m-2,
+.about__m-3,
+.about__m-4 {
+    width: 400px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: relative; /* Set the position to relative */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Add margin to elements except the first one */
+.about__m-2,
+.about__m-3,
+.about__m-4 {
+    margin-top: 1rem;
+}
+
+
+.info__title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.parts__1 {
+    width: 180px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.other__icon-1{
+    width: 80px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio by setting height to auto */
+}
+
+.parts__2 {
+    width: 180px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 13rem;
+}
+
+
+.other__icon-2{
+    width: 80px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio by setting height to auto */
+}
+
+.parts__3 {
+    width: 180px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 27rem;
+}
+
+
+.other__icon-3{
+    width: 80px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio by setting height to auto */
+}
+
+.parts__4 {
+    width: 180px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 35.8rem;
+}
+
+
+.other__icon-4{
+    width: 80px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio by setting height to auto */
+}
+
+.parts__5 {
+    width: 180px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 46rem;
+}
+
+
+.other__icon-5{
+    width: 80px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio by setting height to auto */
+}
+
+.parts__6 {
+    width: 180px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2rem;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 55rem;
+}
+
+
+.other__icon-6{
+    width: 80px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio by setting height to auto */
+}
+
+/*FOR MEDIUM DEVICES*/
+@media screen and (min-width: 576px){
+    .motors{
+        margin-left: 10rem;   
+    }
+
+    .parts__1{
+        position: absolute;
+        left: 12rem;
+    }
+    .parts__2{
+        position: absolute;
+        top: 118rem;
+    }
+
+    .parts__3{
+        position: absolute;
+        top: 104.5rem;
+        left: 51rem;
+    }
+    .parts__4{
+        position: absolute;
+        left: 12rem;
+        top: 110rem;
+    }
+    .parts__5{
+        position: absolute;
+        top: 100rem;
+    }
+
+    .parts__6{
+        position: absolute;
+        top: 91rem;
+        left: 51rem;
+    }
+
+
+}
+
+
+
+
+/* Large devices (over 1024px) */
+@media screen and (min-width: 1025px) {
+    
+    .motor__one{
+        position: absolute;
+        left: 2rem;
+    }
+
+    .motor__two{
+        position: absolute;
+        left: 2rem;
+        top: 33rem;
+    }
+
+    .motor__three{
+        position: absolute;
+        left: 2rem;
+        top: 55rem;
+    }
+    .about__motor{
+        position: absolute;
+        left: 60rem;
+        bottom: 12rem;
+    }
+    .info__title{
+        position: absolute;
+        bottom: 7rem;
+        left: 64rem;
+    }
+    .parts__1{
+        position: absolute;
+        top: 52rem;
+        left: 55rem;
+    }
+
+    .parts__2{
+        position: absolute;
+        top: 39rem;
+        left: 70rem;
+    }
+
+    .parts__3{
+        position: absolute;
+        top: 25rem;
+        left: 85rem;
+    }
+
+    .parts__4{
+        position: absolute;
+        top: 30rem;
+        left: 55rem;
+    }
+
+    .parts__5{
+        position: absolute;
+        top: 20rem;
+        left: 70rem;
+    }
+
+    .parts__6{
+        position: absolute;
+        top: 11rem;
+        left: 85rem;
+    }
+
+}
+
+@media screen and (min-width: 1664px){
+
+    .motor__one{
+        left: 15rem;
+    }
+
+    .motor__two{
+        left: 15rem;
+    }
+    .motor__three{
+        left: 15rem;
+    }
+    .about__motor{
+        position: absolute;
+        left: 70rem;
+        bottom: 12rem;
+    }
+    .info__title{
+        left: 75rem;
+    }
+
+    .parts__1{
+        position: absolute;
+        top: 52rem;
+        left: 69rem;
+    }
+
+    .parts__2{
+        position: absolute;
+        top: 39rem;
+        left: 83rem;
+    }
+
+    .parts__3{
+        position: absolute;
+        top: 25rem;
+        left: 97rem;
+    }
+
+    .parts__4{
+        position: absolute;
+        top: 30rem;
+        left: 69rem;
+    }
+
+    .parts__5{
+        position: absolute;
+        top: 20rem;
+        left: 83rem;
+    }
+
+    .parts__6{
+        position: absolute;
+        top: 11rem;
+        left: 97rem;
+    }
+}
